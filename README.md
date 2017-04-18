@@ -15,7 +15,8 @@ The first step; is to defined the set of technology stack; the first version of 
 ---------------------- 1.....n Based on Vert.x + camel for integration features.
             ^
             |
------------------------------------
+----------------------
+/
 |    Metadata framework       |  1.....n Grid Cache or metadata definition of application or business scope micro services
 -----------------------------------
 

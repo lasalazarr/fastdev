@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+<configuration debug="false">
+
+<springProfile name="production">
+			<property name="log.name" value="backend" />
+</springProfile>
+
+	<property name="log.path" value="/srv/produccion/log/${log.name}"
+		scope="context" />
+	<property name="log.line.pattern" value="%d{HH:mm:ss.SSS}|%X{RECEPTIONABLE_ID}|[%thread]|%highlight(%p)|%marker|%cyan(%c{1})|%m%n" />
+
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>${log.line.pattern}</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="BACKEND_FILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${log.path}/${log.name}.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${log.path}/%d{yyyyMMddHH}_${log.name}.gz
+			</fileNamePattern>
+		</rollingPolicy>
+		<encoder>
+			<pattern>${log.line.pattern}</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="com.hello.controller.HelloController" level="DEBUG" />
+	<logger name="org.apache.http" level="ERROR" />
+	<logger name="org.springframework" level="ERROR" />
+	<logger name="org.springframework.scheduling" level="INFO" />
+	<logger name="org.springframework.beans.factory.annotation"
+		level="ERROR" />
+	<logger name="org.quartz" level="INFO" />
+	<logger name="freemarker" level="INFO" />
+	<logger name="net.sf.jasperreports" level="INFO" />
+	<logger name="org.apache.commons.digester" level="INFO" />
+	<logger name="org.apache.commons.beanutils" level="INFO" />
+	<logger name="net.bull.javamelody" level="INFO" />
+	<logger name="org.hibernate" level="INFO" />
+	<logger name="org.hornetq" level="INFO" />
+	<logger name="org.eclipse" level="INFO" />
+
+	<springProfile name="default">
+		<root level="DEBUG">
+			<appender-ref ref="CONSOLE" />
+		</root>
+	</springProfile>
+	<springProfile name="production">
+		<root level="INFO">
+			<appender-ref ref="BACKEND_FILE" />
+		</root>
+	</springProfile>
+
+</configuration>
