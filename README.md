@@ -1,9 +1,9 @@
 
 # fastdev EN
 
-fastdev7 is an open source microservices platform based on Vert.x, React, ReactNative, Docker, and Jenkins
+fastdev7 is an open source microservices code blueprint project based on create microservices using different frameworks bases on Java such as: Vert.x, Spring boot or JEE; and create front-end templates using: React, ReactNative or Angular. For distribution and CI we use: Docker, and Jenkins
 
-The first step; is to defined the set of technology stack; the first version of this framework was developed in 2008 and 2009 by Advance Consulting team. This source code are now release as a new open source project to re define it and launch a new microservices platform based on metadata 
+Several code and experiences were shared by a framework that was developed in 2008 and 2009 by Advance Latam Team (www.advlatam.com). This source code are now release as a new open source project to re define it and launch a new microservices platform based on metadata 
 
 ----------------------
 |    frontend       |
@@ -12,19 +12,10 @@ The first step; is to defined the set of technology stack; the first version of 
             |
 ----------------------
 |    Backend       |
----------------------- 1.....n Based on Vert.x + camel for integration features.
+---------------------- 1.....n Based on Vert.x or Apache Camel or Spring boot.
             ^
             |
 ----------------------
 /
 |    Metadata framework       |  1.....n Grid Cache or metadata definition of application or business scope micro services
 -----------------------------------
-
-# fastdev ES
-
-Fast Microservices development framework
-
-Framework que  permite  en  tiempo  record  desarrollar  productos  o  aplicaciones  de  software  empresariales  bajo  un robusta stack de herramientas y plataformas de codigo abierto. 
-
-El objetivo del framework es ayudar a optimizar el proceso de desarrollo de aplicaciones, reducir significativamente los costos y agregar productividad a las empresas. 
-
