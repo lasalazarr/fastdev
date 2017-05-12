@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="microservices-camel-blueprint" />
+        <module name="microservices-vertx" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="microservices-camel-blueprint" target="1.8" />
+      <module name="microservices-vertx" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,3 +1,8 @@
+*.class
+*.bin
+*.lock
+.gradle
+build/
 target/
 activemq-data/
 *.log
@@ -29,6 +34,5 @@ bin-groovy
 atlassian-ide-plugin.private.xml
 atlassian-ide-plugin.xml
 .svn
-
 configuration/configuration.iml
 configuration/cassandra-configuration/cassandra-configuration.iml
