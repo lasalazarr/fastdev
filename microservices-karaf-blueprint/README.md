@@ -21,7 +21,7 @@ It consists of following sub-modules:
 	
 ## Prerequesites
 
-First of all make sure you also have the [Karaf-Microservices-Tooling](https://github.com/ANierbeck/Karaf-Microservices-Tooling) project build. The service-test module does use a specialized pre-configured Karaf instance, Karaf-Service-Runtime.
+First of all make sure you also have the [Karaf-Microservices-Tooling](/Karaf-Microservices-Tooling) project build. The service-test module does use a specialized pre-configured Karaf instance, Karaf-Service-Runtime.
 
 ## Building
 
