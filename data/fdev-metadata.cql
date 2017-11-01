@@ -1,2 +1,0 @@
-CREATE KEYSPACE fdevMetadata   WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 3 };
-
